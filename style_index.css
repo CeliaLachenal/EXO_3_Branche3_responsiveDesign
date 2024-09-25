@@ -83,8 +83,6 @@ h1 > span{
 }
 
 
-
-
 button{
   position: absolute;
   width: 4.5rem;
@@ -97,7 +95,20 @@ button{
   
 }
 
+/* p dans lequel on indique si l'input est bien rempli ou pas */
+#erreur{
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  text-align: start;
+}
 
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
 
 
 

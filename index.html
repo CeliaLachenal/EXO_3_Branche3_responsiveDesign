@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-<script src="script_index.js"></script>
+<script src="script_index.js" defer></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
@@ -39,9 +39,14 @@
 
     </div>
     <div class="inputMail">
-      <input class="josefin-sans-bodyFont" type="email" id="email" pattern=".+@example\.com" size="30" placeholder=" Email Address" required />
+      <button type="submit" name="email" id="ok"><img src="images/icon-arrow.svg" alt="chevron blanc"></button>
 
-      <button type="submit"><img src="images/icon-arrow.svg" alt="chevron blanc"></button>
+      
+      <input class="josefin-sans-bodyFont" type="email" id="email" pattern=".+@example\.com" size="30" placeholder="Email Address" required />
+
+      <p id="erreur"> </p>
+
+      
     </div>
 
 
