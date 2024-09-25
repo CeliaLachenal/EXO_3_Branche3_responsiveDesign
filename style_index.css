@@ -111,9 +111,45 @@ button{
 /*icon d'erreur rond rouge avec ! */
 #caution{
   position: absolute;
-  left: 14rem;
-  top: 0.8rem;
+  left: 12rem;
+  top: 0.6rem;
   visibility: hidden;
+}
+
+/****** MEDIA QUERIES ******/
+
+/* Pour les téléphones en portrait */
+@media (max-width: 575.98px) {
+  /* Styles pour les petits mobiles */
+}
+
+/* Pour les téléphones en paysage */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles pour les mobiles en mode paysage */
+}
+
+/* Pour les tablettes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body{
+    width: 768px;
+    flex-direction: row;
+  }
+  
+}
+
+/* Pour les ordinateurs portables */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles pour les ordinateurs portables */
+}
+
+/* Pour les grands écrans d'ordinateurs */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Styles pour les grands écrans */
+}
+
+/* Pour les très grands écrans */
+@media (min-width: 1400px) {
+  /* Styles pour les très grands écrans */
 }
 
 
@@ -122,8 +158,6 @@ button{
 
 
 
-
-
 /* FOOTER*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */

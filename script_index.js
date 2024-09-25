@@ -13,23 +13,27 @@ document.getElementById("ok").addEventListener("click", function () {
   let imgCaution = document.getElementById("caution");
   /* console.log(inputValue); */
   if (inputValue.length === 0) {
+    erreur.classList = this.remove;
     document.getElementById("erreur").classList.add("red");
     document.getElementById("erreur").innerText =
       "Erreur : vous n'avez pas indiqué votre email.";
     imgCaution.style.visibility = "visible";
   } 
   else if (!validateEmail(email)) {
-    document.getElementById("erreur").classList.add("red");
     document.getElementById("erreur").innerText =
       "Votre mail n'est pas conforme.";
     imgCaution.style.visibility = "visible";
+    erreur.classList = this.remove;
+    document.getElementById("erreur").classList.add("red");
 
     //console.log("email non conforme");
   } else {
+    erreur.classList = this.remove;
     document.getElementById("erreur").classList.add("green");
     document.getElementById("erreur").innerText =
       "Merci, un email de confirmation vous a été envoyé.";
       imgCaution.style.visibility = "hidden";
       email.value = " ";
+      
   }
 });
