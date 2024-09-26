@@ -12,22 +12,34 @@
 body{
   margin: auto;
   padding: 0;
-  width:375px;
- /*  border: 1px solid black; */
+  min-width: 375px;
+  border: 1px solid black;
   color: hsl(0, 36%, 70%);
   
-
-  
 }
+
+
 /*HEADER*/
 header{
-  height: 5rem;
+  height: 4rem;
 }
 
-header>img{
-  width: 30%;
+/*image logo */
+.logo{
+  width: 20%;
   margin: 0.5em 0 0.5em 1em; 
 }
+
+/*div qui contient l'image  de la jeune femme version mobile */
+#photo{
+  max-width: 375px;
+}
+
+/* image jeune femme version desktop*/
+.photoDesktop{
+  display: none;
+}
+
 
 main{
   display: flex;
@@ -39,7 +51,7 @@ main{
 }
 
 
-.content>p{
+.content > p{
   line-height: 1.5rem;
   margin: 1.5rem 1rem 2rem 1rem;
   
@@ -118,39 +130,72 @@ button{
 
 /****** MEDIA QUERIES ******/
 
-/* Pour les téléphones en portrait */
-@media (max-width: 575.98px) {
-  /* Styles pour les petits mobiles */
-}
-
 /* Pour les téléphones en paysage */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* Styles pour les mobiles en mode paysage */
+@media (min-width: 375px) and (max-width: 767.98px) {
+  #photo{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 /* Pour les tablettes */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  body{
-    width: 768px;
-    flex-direction: row;
+@media (min-width: 768px) {
+  body{ 
+    display: flex;
+    flex-direction: row-reverse;
+    background: black;
+    
+  } 
+
+  header{
+    width: 100%;
+    text-align: left;
+    background-color: cornflowerblue;
+
+  }
+
+  .logo{
+    width: 7rem;
+    margin-left: 5.5rem ;
+    background: blue;
   }
   
-}
+  .photoDesktop{
+    display: block;
+    position: relative;
+    z-index: 20;
+    width: 40%;
+  }
 
-/* Pour les ordinateurs portables */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Styles pour les ordinateurs portables */
-}
+  .photoMobile{
+    display: none;
+  }
 
-/* Pour les grands écrans d'ordinateurs */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  /* Styles pour les grands écrans */
-}
+  /*Alignement du texte et les différents éléments à gauche*/
+  main, .content, .inputMail{
+    text-align: left;
+  }
 
-/* Pour les très grands écrans */
-@media (min-width: 1400px) {
-  /* Styles pour les très grands écrans */
-}
+  main{
+    width: 70%;
+    background: coral;
+  }
+
+  .content{
+    width: 70%;
+    background-color: chartreuse;
+  }
+
+  .inputMail{
+    width: 70%;
+    background-color: darkmagenta;
+  }
+} 
+
+
 
 
 

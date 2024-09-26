@@ -16,20 +16,28 @@
   <!-- liens pour la google font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
 
-<script src="script_index.js" defer></script>
+  <script src="script_index.js" defer></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
 <body class="josefin-sans-bodyFont">
+
+  <!-- image en version desktop -->
+  <img class="photoDesktop" src="images/hero-desktop.jpg" alt="Jeune femme brune avec un polo orange">
+
   <header>
-    <img src="images/logo.svg" alt="Logo de Base Apparel">
+    <img class="logo" src="images/logo.svg" alt="Logo de Base Apparel">
   </header>
 
-  <img src="images/hero-mobile.jpg" alt="Jeune femme brune avec un polo orange">
-  
   <main>
+  <div id="photo">
+    <img class="photoMobile" src="images/hero-mobile.jpg" alt="Jeune femme brune avec un polo orange">
+  </div>
+  
+  
     <div class="content">
       <h1>We're <br> <span>coming <br> soon</span></h1>
       <p>
@@ -42,18 +50,17 @@
       <button type="submit" name="email" id="ok"><img src="images/icon-arrow.svg" alt="chevron blanc"></button>
 
       <img id="caution" src="images/icon-error.svg" alt="icon alert erreur">
-      <input class="josefin-sans-bodyFont" type="email" id="email" pattern=".+@example\.com" size="30" placeholder="Email Address" required />
+      <input class="josefin-sans-bodyFont" type="email" id="email" pattern=".+@example\.com" size="30"
+        placeholder="Email Address" required />
 
       <p id="erreur"> </p>
-
-      
     </div>
 
 
   </main>
 
 
-<!--   <footer>
+  <!--   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
