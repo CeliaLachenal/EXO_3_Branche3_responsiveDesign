@@ -13,7 +13,7 @@ body{
   margin: auto;
   padding: 0;
   min-width: 375px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   color: hsl(0, 36%, 70%);
   
 }
@@ -22,6 +22,7 @@ body{
 /*HEADER*/
 header{
   height: 4rem;
+  background-image: linear-gradient(135deg,  hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%)100%);
 }
 
 /*image logo */
@@ -47,7 +48,7 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg,  hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%)100%);
+  
 }
 
 
@@ -137,6 +138,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:url(images/bg-pattern-desktop.svg);
   }
 
 }
@@ -146,28 +148,44 @@ button{
   body{ 
     display: flex;
     flex-direction: row-reverse;
-    background: black;
+    background-image:url(images/bg-pattern-desktop.svg);
+    
     
   } 
 
   header{
     width: 100%;
     text-align: left;
-    background-color: cornflowerblue;
+    
 
   }
 
+  .desktopContainer{
+    display: flex;
+    flex-direction: column;
+    
+    /* background-color: deeppink; */
+  }
+
   .logo{
-    width: 7rem;
-    margin-left: 5.5rem ;
-    background: blue;
+    width: 9rem;
+    margin-left: 6.5rem ;
+    
   }
   
   .photoDesktop{
     display: block;
     position: relative;
     z-index: 20;
-    width: 40%;
+    width: 100%;
+    height: 100%;
+    /* min-width: 610px; */
+    object-fit: cover;
+  }
+
+  /*div qui contient la photo version desktop */
+  .photoDesktopContainer{
+    width: 30%;
   }
 
   .photoMobile{
@@ -179,20 +197,21 @@ button{
     text-align: left;
   }
 
-  main{
+/*   main{
     width: 70%;
     background: coral;
-  }
+  } */
 
   .content{
-    width: 70%;
-    background-color: chartreuse;
+    width: 80%;
+    /* background-color: chartreuse; */
   }
 
-  .inputMail{
-    width: 70%;
-    background-color: darkmagenta;
-  }
+.inputMail{
+    width: 80%;
+    text-align: left;
+    /* background-color: darkmagenta; */
+  } 
 } 
 
 
